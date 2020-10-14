@@ -96,11 +96,15 @@ ul {
   list-style-type: none;
 }
 
+.nav {
+  width: 75%;
+  margin-left: auto;
+}
 .nav ul {
   display: flex;
   justify-content: space-between;
-  width: 60%;
-  margin: 2em 1.5em 2em auto;
+  margin: 2em 2.3em;
+  padding: 0;
 }
 
 .intro {
@@ -129,15 +133,6 @@ ul {
 .open {
   display: inline-block;
   font-family: sans-serif;
-  border: 1px solid grey;
-  width: 60%;
-  height: 16em;
-  border-radius: 50%;
-  color: gray;
-  position: relative;
-  top: -8.5em;
-  left: 3.7em;
-  z-index: -1;
 }
 .availability {
   margin-top: 6em;
@@ -146,10 +141,5 @@ ul {
   margin-left: 6em;
 }
 .today {
-  position: relative;
-  left: 10em;
-  width: 20%;
-  top: 6em;
   background: #111111;
-  padding: 3em;
 }
