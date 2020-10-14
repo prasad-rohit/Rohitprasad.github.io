@@ -4,7 +4,7 @@
   font-family: "monument_extendedregular";
   src: url("monumentextended-regular-webfont.woff2") format("woff2"),
     url("monumentextended-regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -20,7 +20,7 @@ body {
   background-color: #111111;
   margin: 0;
   overflow-x: hidden;
-  font-family: "monument_extendedultrabold", Arial, sans-serif;
+  font-family: "monument_extendedregular", Arial, sans-serif;
   color: rgb(255, 255, 255);
 }
 
@@ -79,8 +79,13 @@ body {
 /* END OF BASIC FONT AND BODY CSS */
 
 /* MAIN CSS */
+img {
+  width: 100%;
+}
+
 h1 {
   margin: 0;
+  margin-bottom: -0.3em;
 }
 
 .about {
@@ -93,4 +98,58 @@ ul {
 
 .nav ul {
   display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 2em 1.5em 2em auto;
+}
+
+.intro {
+  font-family: "monument_extendedregular", sans-serif;
+  font-size: 1.6em;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2.4em;
+}
+
+.skill ul {
+  font-size: 0.7em;
+  padding: 0;
+  margin-left: 1em;
+}
+.skill {
+  display: flex;
+  margin: 0.8em 0 0 3em;
+}
+.skill img {
+  width: 16%;
+  height: 18%;
+  margin-top: 0.3em;
+  margin-left: -1em;
+}
+.open {
+  display: inline-block;
+  font-family: sans-serif;
+  border: 1px solid grey;
+  width: 60%;
+  height: 16em;
+  border-radius: 50%;
+  color: gray;
+  position: relative;
+  top: -8.5em;
+  left: 3.7em;
+  z-index: -1;
+}
+.availability {
+  margin-top: 6em;
+  font-family: monospace;
+  font-size: 1.3em;
+  margin-left: 6em;
+}
+.today {
+  position: relative;
+  left: 10em;
+  width: 20%;
+  top: 6em;
+  background: #111111;
+  padding: 3em;
 }
