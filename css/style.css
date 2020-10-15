@@ -15,7 +15,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+html {
+  width: 100vw;
+}
 body {
   background-color: #111111;
   margin: 0;
@@ -90,6 +92,11 @@ h1 {
   margin-bottom: -0.3em;
 }
 
+h2,
+h5 {
+  margin-bottom: 0;
+}
+
 .about {
   font-family: sans-serif;
 }
@@ -115,8 +122,93 @@ ul {
 .intro {
   font-family: "monument_extendedregular", sans-serif;
   font-size: 1.6em;
-
   margin-top: 2.4em;
+}
+
+.about {
+  font-size: 0.7em;
+  font-style: oblique;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  margin-top: -3.5em;
+  margin-bottom: 6em;
+}
+.contact {
+  background: none;
+  color: white;
+  width: 100%;
+  margin: 1.5em auto;
+  font-size: larger;
+  transform: skew(20deg);
+  border: none;
+}
+.contact p {
+  transform: skew(-20deg);
+}
+
+/* CIRCLE PART CSS */
+
+.circle {
+  margin-top: 5em;
+}
+
+.open {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  padding-top: 100%;
+  border: 1px gainsboro solid;
+  opacity: 30%;
+}
+
+.availability {
+  width: 75%;
+  margin: 0 auto;
+}
+.today,
+.status {
+  text-align: center;
+  position: relative;
+}
+.today {
+  bottom: -6.5em;
+}
+.status {
+  top: -7.5em;
+  font-size: small;
+}
+
+/* CIRCLE CSS END */
+
+/* SKILLS SECTION CSS START */
+
+.skill-head {
+  font-size: 1.8em;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.skills img {
+  width: 50%;
+  margin-top: 1.8em;
+}
+
+.skills {
+  margin-top: 8em;
+}
+
+.skill-section {
+  width: 100%;
+}
+
+.one,
+.two,
+.three {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
 }
 
 .skill ul {
@@ -134,45 +226,9 @@ ul {
   margin-top: 0.3em;
   margin-left: -1em;
 }
-.open {
-  display: inline-block;
-  font-family: sans-serif;
-}
-.availability {
-  margin-top: 6em;
-  font-family: monospace;
-  font-size: 1.3em;
-  margin-left: 6em;
-}
-.today {
-  background: #111111;
-}
 
-.about {
-  font-size: smaller;
-  font-style: oblique;
-  line-height: 1.8em;
-  letter-spacing: 0.1em;
-}
-.contact {
-  background: none;
-  color: white;
-  width: 100%;
-  margin: 1.5em auto;
-  font-size: larger;
-  transform: skew(20deg);
-  border: none;
-}
-.contact p {
-  transform: skew(-20deg);
-}
-
-.skill-head {
-  font-size: 1.85em;
-  margin-top: 2em;
-  margin: 0 auto;
-}
-.skills img {
-  width: 50%;
-  margin-top: 1.8em;
+.skills h2 {
+  margin-top: 0;
+  margin-bottom: 1.4em;
+  border-bottom: 3px solid #fff;
 }
