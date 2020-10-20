@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
 }
 
-.bg {
+/* .bg {
   position: fixed;
   top: -50%;
   left: -50%;
@@ -79,7 +79,7 @@ body {
   100% {
     transform: translate(5%, 0);
   }
-}
+} */
 
 /* END OF BASIC FONT AND BODY CSS */
 
@@ -179,6 +179,16 @@ ul {
   font-size: small;
 }
 
+.today {
+  background: #111111;
+  position: relative;
+  top: 4em;
+  left: 5em;
+  z-index: 2;
+  padding: 1em 0;
+  width: 30%;
+  margin-left: 8em;
+}
 /* CIRCLE CSS END */
 
 /* SKILLS SECTION CSS START */
@@ -310,3 +320,26 @@ footer {
   padding: 1.7em 1em 0 1em;
 }
 /* FOOTER CSS END */
+
+/* MEDIA QUERIES CSS SECTION */
+
+@media (min-width: 700px) {
+  .nav ul {
+    width: 60%;
+    margin-left: auto;
+  }
+  .intro {
+    font-size: 2.5em;
+    margin-top: -0.4em;
+  }
+  .intro * {
+    letter-spacing: 0.08em;
+  }
+  .skill {
+    justify-content: flex-end;
+    margin: 0 3em 0 0;
+  }
+  .skill img {
+    width: 10%;
+  }
+}
