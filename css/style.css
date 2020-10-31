@@ -182,12 +182,13 @@ ul {
 .today {
   background: #111111;
   position: relative;
-  top: 4em;
-  left: 5em;
+  top: 5em;
+  left: 0em;
   z-index: 2;
-  padding: 1em 0;
-  width: 30%;
+  padding: 2em 0;
+  width: 40%;
   margin-left: 8em;
+  font-size: 1.5em;
 }
 /* CIRCLE CSS END */
 
@@ -328,12 +329,16 @@ footer {
     width: 60%;
     margin-left: auto;
   }
+  .me {
+    font-size: 0em;
+  }
   .intro {
-    font-size: 2.5em;
-    margin-top: -0.4em;
+    font-size: 3em;
+    margin-top: 1em;
   }
   .intro * {
     letter-spacing: 0.08em;
+    line-height: 1.4em;
   }
   .skill {
     justify-content: flex-end;
@@ -341,5 +346,19 @@ footer {
   }
   .skill img {
     width: 10%;
+  }
+
+  .open {
+    width: 70%;
+    padding-top: 70%;
+  }
+  .circle {
+    margin-left: -4em;
+    margin-top: -2em;
+  }
+  .today {
+    font-size: 2.8em;
+    margin-left: 2.6em;
+    width: 40%;
   }
 }
