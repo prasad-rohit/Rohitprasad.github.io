@@ -349,8 +349,10 @@ footer {
   }
 
   .open {
-    width: 70%;
-    padding-top: 70%;
+    width: 60%;
+    padding-top: 60%;
+    margin-left: -2em;
+    margin-top: -3em;
   }
   .circle {
     margin-left: -4em;
@@ -358,7 +360,63 @@ footer {
   }
   .today {
     font-size: 2.8em;
-    margin-left: 2.6em;
+    margin-left: 7.6em;
     width: 40%;
+    top: 3em;
+  }
+  .status {
+    top: -11em;
+    left: -8.6em;
+    font-size: 1em;
+  }
+  .about {
+    width: 50%;
+    text-align: left;
+    margin-left: 28em;
+    margin-top: -10em;
+    margin-bottom: 20em;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+    justify-content: space-between;
+    margin-bottom: 12em;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 50%;
+  }
+  .three {
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .one h5,
+  .two h5,
+  .three h5 {
+    font-size: 1em;
+  }
+  .skill-head {
+    font-size: 2.5em;
+  }
+  .work-name {
+    font-size: 1.4em;
+  }
+  .work-desc {
+    font-size: 1em;
+  }
+  .work-title {
+    font-size: 2em;
+  }
+  .contact-me {
+    font-size: 2.5em;
+    margin-top: 6em;
+  }
+  .skills {
+    margin: 4em 0;
   }
 }
