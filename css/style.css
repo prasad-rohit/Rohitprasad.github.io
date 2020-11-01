@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
 }
 
-/* .bg {
+.bg {
   position: fixed;
   top: -50%;
   left: -50%;
@@ -79,7 +79,7 @@ body {
   100% {
     transform: translate(5%, 0);
   }
-} */
+}
 
 /* END OF BASIC FONT AND BODY CSS */
 
@@ -150,21 +150,16 @@ ul {
 /* CIRCLE PART CSS */
 
 .circle {
-  margin-top: 5em;
-}
-
-.open {
-  position: relative;
-  border-radius: 50%;
-  width: 100%;
-  padding-top: 100%;
-  border: 1px gainsboro solid;
-  opacity: 30%;
+  margin-top: 4em;
 }
 
 .availability {
   width: 75%;
   margin: 0 auto;
+}
+.half-circle {
+  height: 263px;
+  width: 263px;
 }
 .today,
 .status {
@@ -175,12 +170,12 @@ ul {
   bottom: -6.5em;
 }
 .status {
-  top: -7.5em;
+  top: -8.5em;
   font-size: small;
 }
 
 .today {
-  background: #111111;
+  background: none;
   position: relative;
   top: 5em;
   left: 0em;
@@ -190,6 +185,7 @@ ul {
   margin-left: 8em;
   font-size: 1.5em;
 }
+
 /* CIRCLE CSS END */
 
 /* SKILLS SECTION CSS START */
@@ -347,13 +343,6 @@ footer {
   .skill img {
     width: 10%;
   }
-
-  .open {
-    width: 60%;
-    padding-top: 60%;
-    margin-left: -2em;
-    margin-top: -3em;
-  }
   .circle {
     margin-left: -4em;
     margin-top: -2em;
@@ -418,5 +407,80 @@ footer {
   }
   .skills {
     margin: 4em 0;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    width: 90%;
+  }
+  .nav ul {
+    width: 30%;
+  }
+  .intro {
+    font-size: 3.3em;
+    margin-top: -1em;
+  }
+  .skill {
+    margin: 0 auto;
+    width: 50%;
+    margin-left: 9em;
+  }
+
+  .today {
+    top: 4em;
+    margin-left: 9.5em;
+    width: 20%;
+    padding: 1.5em 0;
+  }
+  .status {
+    left: -20em;
+    color: #4d4b4b;
+  }
+  .about {
+    margin-left: 34em;
+    margin-top: -7em;
+    width: 40%;
+    color: #797878;
+  }
+  .one,
+  .two,
+  .three {
+    width: 33%;
+  }
+  .skill-head {
+    font-size: 4em;
+  }
+  .skill-section img {
+    width: 30%;
+  }
+  .work-title {
+    font-size: 4em;
+  }
+  .my-work {
+    display: flex;
+  }
+  .first,
+  .second {
+    width: 40%;
+    margin: 0 5em;
+  }
+  .my-work img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .second {
+    margin-right: -4em;
+  }
+
+  .contact-me {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: -10em;
+  }
+  .half-circle {
+    height: 403px;
+    width: 403px;
   }
 }
