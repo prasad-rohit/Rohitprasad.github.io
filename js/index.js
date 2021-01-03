@@ -12,5 +12,4 @@ console.log(date.getDate());
 //     }
 // }
 
-
 document.querySelector(".today").innerHTML = ` ${date.getDate()}  ${date.toLocaleString('default', { month: 'short' })}`

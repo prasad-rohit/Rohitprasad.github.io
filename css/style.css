@@ -29,6 +29,10 @@ body {
   margin: 0 auto;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .bg {
   position: fixed;
   top: -50%;
@@ -485,3 +489,4 @@ footer {
     width: 403px;
   }
 }
+/* NOT MY CSS */
