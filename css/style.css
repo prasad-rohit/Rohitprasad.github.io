@@ -27,6 +27,7 @@ body {
   color: rgb(255, 255, 255);
   width: 80%;
   margin: 0 auto;
+  animation-name: bg-animation;
 }
 
 body::-webkit-scrollbar {
@@ -93,6 +94,10 @@ img {
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 h1 {
   margin: 0;
   margin-bottom: -0.3em;
@@ -114,6 +119,10 @@ ul {
 .nav {
   width: 80%;
   margin-left: auto;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
 }
 .nav ul {
   display: flex;
@@ -326,6 +335,7 @@ footer {
 /* MEDIA QUERIES CSS SECTION */
 
 @media (min-width: 700px) {
+  
   .nav ul {
     width: 60%;
     margin-left: auto;
@@ -488,5 +498,13 @@ footer {
     height: 403px;
     width: 403px;
   }
+
+  .socials h4 {
+    padding: 1.4em 5.8em;
+  }
+  .insta {
+    margin-left: 4.6em;
+    margin-top: 1em;
+  }
 }
-/* NOT MY CSS */
+ 
