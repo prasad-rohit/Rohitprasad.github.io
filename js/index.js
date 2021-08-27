@@ -1,10 +1,10 @@
 let date = new Date();
 console.log(date.getDate());
-// let current = date.getMonth(); 
+// let current = date.getMonth();
 
 // function month(current) {
 //     switch(current){
-//         case 1: 
+//         case 1:
 //             return "Janurary"
 //             break
 //         case 2:
@@ -12,4 +12,15 @@ console.log(date.getDate());
 //     }
 // }
 
-document.querySelector(".today").innerHTML = ` ${date.getDate()}  ${date.toLocaleString('default', { month: 'short' })}`
+document.querySelector(
+  ".today"
+).innerHTML = ` ${date.getDate()}  ${date.toLocaleString("default", {
+  month: "short",
+})}`;
+
+ScrollReveal({ reset: true });
+ScrollReveal().reveal(".first-work", { delay: 400 });
+ScrollReveal().reveal(".second-work", { delay: 400 });
+ScrollReveal().reveal(".skills", { delay: 400 });
+ScrollReveal().reveal("#coding-profiles", { delay: 400 });
+ScrollReveal().reveal(".contact-me", { delay: 400 });

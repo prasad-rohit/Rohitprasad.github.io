@@ -18,6 +18,7 @@
 html {
   width: 100vw;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #111111;
@@ -119,6 +120,11 @@ ul {
 .nav {
   width: 80%;
   margin-left: auto;
+  visibility: hidden;
+}
+
+.mobile_nav img{
+  width: 100%;
 }
 .nav a {
   text-decoration: none;
@@ -298,7 +304,7 @@ ul {
 }
 
 .contact-me h2 {
-  margin-top: 6em;
+  margin-top: 4em;
   text-align: left;
   font-size: 2.6em;
 }
@@ -307,6 +313,37 @@ h2.email {
   margin-top: 0;
 }
 /* WORKS SECTION CSS END */
+
+
+/* Coding SECTION CSS Start */
+.profiles{
+  display: inline-grid;
+  grid-template-rows: 300px 300px 200px 300px;
+  text-align: center;
+}
+.profiles img{
+  width: 65%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.profiles a{
+  color: aliceblue;
+}
+
+.code{
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  grid: 300px 300px 300px 300px;
+}
+
+.coding-profiles{
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+/* Coding SECTION CSS END */
+
 
 /* FOOTER CSS START */
 
@@ -317,19 +354,20 @@ footer {
   margin-top: 4em;
 }
 
+.github{ grid-area: git;}
+.mail { grid-area: mail;}
+.tweet { grid-area: tweet;}
+.insta { grid-area: insta;}
+
 .socials {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid: 
+      'git mail'
+      'tweet insta';
+  text-align: center;
 }
 
-.socials h4 {
-  padding: 1.4em 2.8em;
-}
 
-.socials .insta,
-.tweet {
-  padding: 1.7em 1em 0 1em;
-}
 /* FOOTER CSS END */
 
 /* MEDIA QUERIES CSS SECTION */
@@ -430,7 +468,7 @@ footer {
     width: 90%;
   }
   .nav ul {
-    width: 30%;
+    width: 40%;
   }
   .intro {
     font-size: 3.3em;
@@ -499,12 +537,32 @@ footer {
     width: 403px;
   }
 
-  .socials h4 {
-    padding: 1.4em 5.8em;
+  .socials{
+    display: flex;
+    justify-content: space-around;
   }
-  .insta {
-    margin-left: 4.6em;
-    margin-top: 1em;
+
+  .socials h4{
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .profiles{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15rem;
+    margin-left: -4.8em;
+  }
+
+  .profiles img{
+    max-width: 2000px;
+    min-width: 190px;
+    max-height:200px;
+    min-height: 200px;
+  }
+
+  .leetcode{
+    margin-left: 0;
   }
 }
  
