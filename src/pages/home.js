@@ -38,7 +38,7 @@ function Home(){
                     </div>
                 </div>
                 <div className="circle">
-                    <div className="today">06 Oct.</div>
+                    <div className="today">🧑‍💻</div>
                     <div className="availability">
                         <svg className="half-circle" width="403px" height="403px" viewBox="0 0 403 403" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
