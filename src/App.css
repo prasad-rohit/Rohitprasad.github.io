@@ -1,38 +1,573 @@
-.App {
+/* FONT AND BASIC BODY CSS */
+
+@font-face {
+  font-family: "monument_extendedregular";
+  src: url("monumentextended-regular-webfont.woff2") format("woff2"),
+  url("monumentextended-regular-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedultrabold";
+  src: url("monumentextended-ultrabold-webfont.woff2") format("woff2"),
+  url("monumentextended-ultrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  width: 100vw;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "monument_extendedregular", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
+  animation-name: bg-animation;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+  url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  z-index: -100;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+/* END OF BASIC FONT AND BODY CSS */
+
+/* MAIN CSS */
+img {
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: -0.3em;
+}
+
+h2,
+h5 {
+  margin-bottom: 0;
+}
+
+.about {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  width: 80%;
+  margin-left: auto;
+  visibility: visible;
+}
+
+.mobile_nav img{
+  width: 100%;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em 2.3em;
+  padding: 0;
+}
+.nav ul li {
+  margin-left: 0.5em;
+}
+
+.intro {
+  font-family: "monument_extendedregular", sans-serif;
+  font-size: 1.6em;
+  margin-top: 2.4em;
+}
+
+.about {
+  font-size: 0.7em;
+  font-style: oblique;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  margin-top: -3.5em;
+  margin-bottom: 6em;
+}
+.contact {
+  background: none;
+  color: white;
+  width: 100%;
+  margin: 1.5em auto;
+  font-size: larger;
+  transform: skew(20deg);
+  border: none;
+}
+.contact p {
+  transform: skew(-20deg);
+}
+
+/* CIRCLE PART CSS */
+
+.circle {
+  margin-top: 4em;
+}
+
+.availability {
+  width: 75%;
+  margin: 0 auto;
+}
+.half-circle {
+  height: 263px;
+  width: 263px;
+}
+.today,
+.status {
+  text-align: center;
+  position: relative;
+}
+.today {
+  bottom: -6.5em;
+}
+.status {
+  top: -8.5em;
+  font-size: small;
+}
+
+.today {
+  background: none;
+  position: relative;
+  top: 5em;
+  left: 0em;
+  z-index: 2;
+  padding: 2em 0;
+  width: 40%;
+  margin-left: 8em;
+  font-size: 1.5em;
+}
+
+/* CIRCLE CSS END */
+
+/* SKILLS SECTION CSS START */
+
+.skill-head {
+  font-size: 1.8em;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.skills img {
+  width: 50%;
+  margin-top: 1.8em;
+}
+
+.skills {
+  margin-top: 8em;
+}
+
+.skill-section {
+  width: 100%;
+}
+
+.one,
+.two,
+.three,
+.four{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.skill ul {
+  font-size: 0.7em;
+  padding: 0;
+  margin-left: 1em;
+}
+.skill {
+  display: flex;
+  margin: 0.8em 0 0 3em;
+}
+.skill img {
+  width: 16%;
+  height: 18%;
+  margin-top: 0.3em;
+  margin-left: -1em;
+}
+
+.skills h2 {
+  margin-top: 0;
+  margin-bottom: 1.4em;
+  /* border-bottom: 3px solid #fff; */
+}
+
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 7.5em;
+  height: 30px;
+  margin-left: 4.5em;
+  margin-top: -0.8em;
+  background: rgb(154, 71, 187);
+  opacity: 0.35;
+}
+
+.skills h2:nth-of-type(1)::after {
+  margin-left: -0.5em;
+}
+
+/* SKILLS SECTION CSS END */
+
+/* WORKS SECTION CSS START */
+
+.work-title {
+  font-size: 2.2em;
+  margin: 4.2em 0;
+  margin-bottom: 2.5em;
+}
+
+.work-name {
+  display: block;
+  margin-top: 2.8em;
+  margin-left: 1.2em;
+  width: 70%;
+}
+.work-desc {
+  font-style: oblique;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  text-align: right;
+  margin-bottom: 8em;
+  font-family: sans-serif;
+  width: 70%;
+  margin-left: auto;
+}
+
+.contact-me h2 {
+  margin-top: 4em;
+  text-align: left;
+  font-size: 2.6em;
+}
+
+h2.email {
+  margin-top: 0;
+}
+/* WORKS SECTION CSS END */
+
+
+/* Coding SECTION CSS Start */
+.profiles{
+  display: inline-grid;
+  grid-template-rows: 300px 300px 200px 300px;
+  text-align: center;
+}
+.profiles img{
+  width: 65%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.profiles a{
+  color: aliceblue;
+}
+
+.code{
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  grid: 300px 300px 300px 300px;
+}
+
+.coding-profiles{
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+/* Coding SECTION CSS END */
+
+
+/* FOOTER CSS START */
+
+footer {
+  background: white;
+  color: #000;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+.github{ grid-area: git;}
+.mail { grid-area: mail;}
+.tweet { grid-area: tweet;}
+.insta { grid-area: insta;}
+
+.socials {
+  display: grid;
+  grid: 
+      'git mail'
+      'tweet insta';
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* FOOTER CSS END */
+
+/* MEDIA QUERIES CSS SECTION */
+
+@media (min-width: 700px) {
+
+  .nav ul {
+    width: 60%;
+    margin-left: auto;
+  }
+  .me {
+    font-size: 0em;
+  }
+  .intro {
+    font-size: 3em;
+    margin-top: 1em;
+  }
+  .intro * {
+    letter-spacing: 0.08em;
+    line-height: 1.4em;
+  }
+  .skill {
+    justify-content: flex-end;
+    margin: 0 3em 0 0;
+  }
+  .skill img {
+    width: 10%;
+  }
+  .circle {
+    margin-left: -4em;
+    margin-top: -2em;
+  }
+  .today {
+    font-size: 2.8em;
+    margin-left: 7.6em;
+    width: 40%;
+    top: 3em;
+  }
+  .status {
+    top: -11em;
+    left: -8.6em;
+    font-size: 1em;
+  }
+  .about {
+    width: 50%;
+    text-align: left;
+    margin-left: 28em;
+    margin-top: -10em;
+    margin-bottom: 20em;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+    justify-content: space-between;
+    margin-bottom: 12em;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 50%;
+  }
+  .three {
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .one h5,
+  .two h5,
+  .three h5,
+  .four h5
+  {
+    font-size: 1em;
+  }
+  .skill-head {
+    font-size: 2.5em;
+  }
+  .work-name {
+    font-size: 1.4em;
+  }
+  .work-desc {
+    font-size: 1em;
+  }
+  .work-title {
+    font-size: 2em;
+  }
+  .contact-me {
+    font-size: 2.5em;
+    margin-top: 6em;
+  }
+  .skills {
+    margin: 4em 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 950px) {
+  body {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .nav ul {
+    width: 40%;
+  }
+  .intro {
+    font-size: 3.3em;
+    margin-top: -1em;
+  }
+  .skill {
+    margin: 0 auto;
+    width: 50%;
+    margin-left: 9em;
+  }
+
+  .today {
+    top: 4em;
+    margin-left: 9.5em;
+    width: 20%;
+    padding: 1.5em 0;
+  }
+  .status {
+    left: -20em;
+    color: #4d4b4b;
+  }
+  .about {
+    margin-left: 34em;
+    margin-top: -7em;
+    width: 40%;
+    color: #797878;
+  }
+  .one,
+  .two,
+  .three,
+  .four{
+    width: 25%;
+  }
+  .skill-head {
+    font-size: 4em;
+  }
+  .skill-section img {
+    width: 30%;
+  }
+  .work-title {
+    font-size: 4em;
+  }
+  .my-work {
+    display: flex;
+  }
+  .first,
+  .second {
+    width: 40%;
+    margin: 0 5em;
+  }
+  .my-work img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .second {
+    margin-right: -4em;
+  }
+
+  .contact-me {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: -10em;
+  }
+  .half-circle {
+    height: 403px;
+    width: 403px;
+  }
+
+  .socials{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .socials h4{
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .profiles{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15rem;
+    margin-left: -4.8em;
+  }
+
+  .profiles img{
+    max-width: 2000px;
+    min-width: 190px;
+    max-height:200px;
+    min-height: 200px;
+  }
+
+  .leetcode{
+    margin-left: 0;
   }
 }
+ 
+
